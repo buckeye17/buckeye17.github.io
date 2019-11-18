@@ -7,7 +7,6 @@ header:
     image: "/images/"
 ---
 
-[//]: # (the following line is broken {% include base_path %})
 
 {% include group-by-array collection=site.posts field="tags" %}
 
