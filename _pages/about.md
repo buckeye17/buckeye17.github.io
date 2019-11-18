@@ -5,10 +5,10 @@ header:
     image: "/images/EmeraldLake.jpg"
 ---
 
-### How I got in Data Science
-I'm an aerospace engineer with 11 years of experience working as a design engineer at Rolls-Royce .  Throughout my career I've demonstrated an aptitude for solving engineering problems with computer programming.  
+### How I got into Data Science
+I'm an aerospace engineer with 11 years of experience working as a design engineer at Rolls-Royce.  Throughout my career I've demonstrated an aptitude for solving engineering problems with computer programming.
 
-In 2018 I earned a certificate in Data Analytics from Purdue University, where I learned to use R and then applied it to a variety of projects.  In 2019 I completed DataCamp's Python for Data Science career track.  
+In 2018 I earned a certificate in Data Analytics from Purdue University, where I learned to use R and then applied it to a variety of projects at Rolls-Royce.  In 2019 I completed DataCamp's Python for Data Science career track.  I'm currently working on online competitions for machine learning to further develop my skill in this area.
 
 ### University Math Courses
 * Undergraduate (at The Ohio State University):
