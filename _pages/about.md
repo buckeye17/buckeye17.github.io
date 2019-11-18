@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header: 
-    image: #"/images/"
+    image: "/images/EmeraldLake.jpg"
 ---
 
 I'm an aerospace engineer with 11 years of experience working at Rolls-Royce.
