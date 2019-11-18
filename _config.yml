@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Chris Raper"
-  avatar           : "/images/ProfilePic.jpg"
+  avatar           : "/images/ProfilePic.JPG"
   bio              : "Data Science Portfolio"
   location         : "Indianapolis, IN"
   email            : "raper.chris@gmail.com"
