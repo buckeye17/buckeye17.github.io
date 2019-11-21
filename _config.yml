@@ -20,7 +20,7 @@ title                    : "Data Science Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chris Raper"
-description              : "This website is meant to demonstrate my capabilities as data scientist by sharing my work on public datasets."
+description              : "Data science portfolio for Chris Raper"
 url                      : "https://buckeye17.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Chris Raper"
   avatar           : "/images/ProfilePic2.JPG"
-  bio              : "This website is meant to demonstrate my capabilities as data scientist by sharing my work on public datasets."
+  bio              : "This website is meant to demonstrate my data science skills by sharing my work on public datasets."
   location         : "Indianapolis, IN"
   email            : "raper.chris@gmail.com"
   links:
