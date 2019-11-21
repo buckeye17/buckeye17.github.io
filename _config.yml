@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Chris Raper"
   avatar           : "/images/ProfilePic2.JPG"
-  bio              : "Data Science Portfolio"
+  bio              : "This website is meant to demonstrate my capabilities as data scientist by sharing my work on public datasets."
   location         : "Indianapolis, IN"
   email            : "raper.chris@gmail.com"
   links:
