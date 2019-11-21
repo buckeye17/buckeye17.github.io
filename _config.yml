@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science Portfolio for Chris Raper"
+title                    : "Data Science Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chris Raper"
-description              : "Data Science Portfolio"
+description              : "This website is meant to demonstrate my capabilities as data scientist by sharing my work on public datasets."
 url                      : "https://buckeye17.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
