@@ -43,7 +43,7 @@ The following eight base models were created (bold font indicates the model was 
 
 Next, six ensemble models were constructed and all were hypertuned: Random Forest, ADA Boost based on Decision Tree models, Gradient Boost, Soft Voting based on 9 models, ADA Boost Stacked on top of 9 models, Random Forest stacked on top of 9 models, Random Forest stacked on the 3 most important models from the aforemntioned set of 9.  These models were also cross validated with 5-folds and scored based on the 5-fold mean ROC AUC score.
 
-Prior to building ensembles relying extant base models, the base models were checked for whether their predicted probabilities were correlated.  The plot shows that most models do not have strong correlation (< 0.8).
+Prior to building ensembles which relyied on extant base models, the base models were checked for whether their predicted probabilities were correlated.  The plot shows that most models do not have strong correlation (< 0.8).
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Base-Model-Corr.png" alt="Base Model Correlations Matrix Plot">
 
