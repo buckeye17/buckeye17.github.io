@@ -20,11 +20,13 @@ The following table gives the 5-fold mean ROC AUC score for every model created 
 
 
 ## Methodology Highlights
-* Data Cleaning
-    * No missing values exist in the datasets provided.  All feature data is continuous and is already standardized.  Hence no cleaning was required.
-* Exploratory Data Analysis
-    * First, the data was explored with the aim of feature reduction.
-* Modeling
+### Data Cleaning
+No missing values exist in the datasets provided.  All feature data is continuous and is already standardized.  Hence no cleaning was required.
+
+### Exploratory Data Analysis
+First, the data was explored with the aim of feature reduction.
+
+### Modeling
     * A decision tree classifier was applied, manually adjusting the max_depth parameter
     * The default measure of impurity (Gini) gave unbalanced leaf nodes, therefore entropy was used instead
     * 5 fold cross validation gave 81.6% mean accuracy on the train.csv dataset
