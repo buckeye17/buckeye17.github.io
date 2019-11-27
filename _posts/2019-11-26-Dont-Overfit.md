@@ -16,7 +16,7 @@ Fourteen models were generated in this analysis, six of which were ensembles bas
 
 The following table gives the 5-fold mean ROC AUC score for every model created in this analysis.  Most of these models were hypertuned either using using GridSearchCV.  The most surprising result in this analysis was that Logistic Regression nearly matches the best ensemble, despite the fact that it wasn't hypertuned.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Model-Scores-Tbl2.png" alt="Model Scores Table">
+<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Model-Scores-Tbl3.png" alt="Model Scores Table">
 
 
 ## Methodology Highlights
