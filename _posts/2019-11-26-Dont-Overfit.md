@@ -14,27 +14,9 @@ The goal of this [Kaggle competition](https://www.kaggle.com/c/dont-overfit-ii/o
 Fourteen models were generated in this analysis, six of which were ensembles based on eight base models.  The ensemble techniques provided a small improvement on the best base models. Models were evaluated using the metric ROC AUC.  Most of the models have their ROC curve plotted below.  ROC is a curve which represent how often false positives (X axis) and true positives (Y axis) would occur as the threshold for classification is altered.  Hence it can rank various models independent of threshold.  ROC AUC is the measure of Area Under Curve of the ROC curve.  The more AUC, the better it will distinguish beteen false positives and true positives.
 <img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/ROC-curves.png" alt="Plot of ROC Curves for All Models">
 
-A decision tree was found to give good predictive results, with an accuracy score of 77.5% on the test.csv dataset.
-<img src="{{ site.url }}{{ site.baseurl }}/images/titanic/DecisionTree.png" alt="Titanic Survival Decision Tree">
+The following table gives the 5-fold mean ROC AUC score for every model created in this analysis.
+<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Model-Scores-Tbl.png" alt="Model Scores Table">
 
-
-Mean Score
-Alg Name	
-Ensemble - Soft Voting	0.788889
-Ensemble - Stack with RF 2	0.777083
-Ensemble - RF	0.759375
-Log Reg	0.759028
-Ensemble - Stack with RF	0.758507
-RBF SVC	0.758333
-Ensemble - Grad Boost	0.750694
-SGD	0.750694
-Lin SVC	0.744097
-Ensemble - ADA	0.731250
-Ensemble - Stack ADA	0.710069
-Gauss NB	0.697917
-Poly SVC	0.678125
-KNN	0.627431
-Decision Tree	0.610069
 
 ## Methodology Highlights
 * Data Cleaning
