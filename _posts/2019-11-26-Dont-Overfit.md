@@ -15,7 +15,7 @@ Fourteen models were generated in this analysis, six of which were ensembles bas
 <img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/ROC-curves.png" alt="Plot of ROC Curves for All Models">
 
 The following table gives the 5-fold mean ROC AUC score for every model created in this analysis.
-<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Model-Scores-Tbl.png" alt="Model Scores Table">
+<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Model-Scores-Tbl2.png" alt="Model Scores Table">
 
 
 ## Methodology Highlights
