@@ -54,7 +54,7 @@ Lastly, after the stacked models were completed, feature importance was plotted 
 <img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/RF-Stack-Model-Importance.png" alt="Base Model Importance for Stack with ADA Boost">
 
 ## What Could Be Improved?
-Reading some of the notebooks and discussion threads on the Kaggle competition website, feature importance was examined using partial dependence, the ELI5 package and the SHAP package. All of these are defined in this [Kaggle notebook](https://www.kaggle.com/mjbahmani/tutorial-on-ensemble-learning-don-t-overfit).
+Reading some of the notebooks and discussion threads on the Kaggle competition website, feature importance was examined using partial dependence, the ELI5 package and the SHAP package. All of these are defined in this [Kaggle notebook](https://www.kaggle.com/mjbahmani/tutorial-on-ensemble-learning-don-t-overfit).  In addition, when tuning ensemble models, recursive feature elimination (RFE) could have been utilized to accomplish more extensive tuning.
 
 Also, alternate metrics could be added to the model evaluation.  The Wikipedia page for [ROC](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) mentions that ROC AUC has a few shortcomings: it can be noisy, it ignores performance in specific threshold regions and only half of the measure is useful (<0.5 means it is worse than a random selection).  Alterntive metrics are: Informedness, Markedness, Matthews correlation coefficient, Certainty, Gini coefficient and Total Operating Characteristic.
 
