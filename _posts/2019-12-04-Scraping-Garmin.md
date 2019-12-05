@@ -1,6 +1,6 @@
 ---
 title: "Web Scraping: My Garmin Sleep Data"
-date: 2019-12-04
+date: 2019-12-05
 tags: [scraping]
 header:
     image: "/images/garmin-scraping/garmin-banner.jpg"
@@ -10,7 +10,7 @@ excerpt: "JSON sleep data files were obtained from May 2017 through the present.
 ## Environment
 Python 3.8 with: Pandas, Numpy, Itertools, Datetime, JSON, RE, Pytz, Requests, Selenium, Seleniumwire, Brotli
 
-A conda environment for data science was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/garmin-sleep-scrape) on Github, and the README.md file provides instructions for how to use the scripts.
+A conda environment for data science was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/garmin-scraping) on Github, and the README.md file provides instructions for how to use the scripts.
 
 ## Summary
 The goal of this project was to collect all of my personal sleep data from Garmin's website.  Garmin does not provide means of easily dowloading many days of data, so web scraping techniques were required to get the data.
