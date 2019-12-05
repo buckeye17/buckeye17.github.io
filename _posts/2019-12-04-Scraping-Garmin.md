@@ -13,7 +13,7 @@ Python 3.8 with: Pandas, Numpy, Itertools, Datetime, JSON, RE, Pytz, Requests, S
 A conda environment for data science was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/garmin-scraping) on Github, and the README.md file provides instructions for how to use the scripts.
 
 ## Summary
-The goal of this project was to collect all of my personal sleep data from Garmin's website.  Garmin does not provide means of easily dowloading many days of data, so web scraping techniques were required to get the data.
+The goal of this project was to collect all of my personal sleep data from Garmin's website.  Garmin does not provide means of easily dowloading many days of data, so web scraping techniques were required to get the data.  My ultimate goal with this data is to create a web-based dashboard to visualize my sleep tendencies.
 
 JSON sleep data files were obtained from May 2017 through the present.  These files provide the date and time for when I fell asleep and woke up each evening.  They also give the duration for how long I was in deep sleep, light sleep, awake (during a sleep event) and total sleep time. 
 
