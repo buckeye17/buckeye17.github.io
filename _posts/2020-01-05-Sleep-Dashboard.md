@@ -24,7 +24,7 @@ The dashboard was developed using the packages [plotly\|Dash](https://plot.ly/da
 Lastly, the dashboard was deployed on the [Heroku platform](https://www.heroku.com/).  It provides hosting services spanning from free personal accounts to enterprise accounts.  Deployment is accomplished by a command line tool which enables Git repositories to be pushed to Heroku.  A custom environment is then built and the web service is launched.  All of the tools above enabled a public web-based dashboard to be deployed using nothing but Python and git.
 
 ## Discussion
-This project entailed many challenges, including: 
+Ultimately, ~1,900 lines of Python were written to produce this dashboard.  The project entailed many challenges, including: 
 1. Improving my web-scraping code so that data which had already been downloaded wouldn't be downloaded again.  Without this, each update would take more than 10 minutes to complete.
 2. Doing many date & time manipulations so that the proper date was referenced for each night and the time of day was properly represented based on timezone and daylight savings.  In conjunction with the datetime package, this effort demonstrated Panda's powerful date & time capabilities using the `.dt` accessor.
 3. Merging old Microsoft CSV data with Garmin in a consistent manner.  In addition to addressing the same date & time concerns with the Garmin data, this also required identifying and filtering out naps, since Microsoft captured these but Garmin did not.
