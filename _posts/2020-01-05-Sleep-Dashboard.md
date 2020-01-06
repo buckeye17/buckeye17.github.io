@@ -15,11 +15,14 @@ A conda environment for the web app was created, and all of the programming was 
 ## Overview
 The goal of this project was to collect to deploy a dashboard which visualizes all of my sleep data from my smartwatches.  This includes data from my Microsoft Health band (2015 - 2017) and Garmin smartwatch (2017 - present).  The dashboard was also expected to get new data from Garmin.  Lastly, this dashboard was to be deployed to a public server so I could share my work and view my data without running Python on my PC.  This project benefitted from my previous web scraping project.
 
-The dashboard was developed using the packages [plotly|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy plotly figures to a server as a flask app.  Dash Bootstrap Components extends Dash html capabilities with the very popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also suppurts 20 [Bootswatch](https://bootswatch.com/) CSS themes.
+The dashboard was developed using the packages [plotly\|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy plotly figures to a server as a flask app.  Dash Bootstrap Components extends Dash html capabilities with the very popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also suppurts 20 [Bootswatch](https://bootswatch.com/) CSS themes.
 
 Lastly, the dashboard was deployed on [Heroku's](https://www.heroku.com/) platform.  This platform provides hosting services spanning from free accounts to enterprise accounts.  Using a command line interface, git repositories can be pushed to Heroku, where a custom environment is built and then the web service is launched.  All of the tools above enabled a public web dashboard to be deployed using nothing but Python and git.
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png" alt="Finished Dashboard Screenshot">
+
+![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)
+*Finished Dashboard Screenshot*
 
 ## Discussion
 This project entailed many challenges, which included: 
