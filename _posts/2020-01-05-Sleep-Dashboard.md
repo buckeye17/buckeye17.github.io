@@ -39,4 +39,4 @@ Selenium runs with rare issues in my local conda environment, but it is finicky 
 
 The overview tab in the app is slow to update when changes are made to the filters.  The code for these updates would benefit from optimization.
 
-The app supports filtering "off days", which are meant to represent nights where I didn't have work on the following morning.  This includes weekends, holidays and PTO.  Without access to my previous employer's records, I don't know my PTO dates.  This could be improved with research in my email and Facebook accounts.  For now, many actual PTO days are assumed to be working days instead.
+The app supports filtering "off days", which are meant to represent nights where I didn't have work on the following morning.  This includes weekends, holidays and PTO.  Without access to my previous employer's records, I don't have an easy method for getting all of my PTO dates.  This could be improved with research in my email and Facebook accounts.  For now, many actual PTO days are assumed to be working days.
