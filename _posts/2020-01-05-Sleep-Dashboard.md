@@ -1,6 +1,6 @@
 ---
-title: "Web Scraping: My Garmin Sleep Data"
-date: 2020=01-05
+title: "Dashboard: Visualizing My Sleep Data"
+date: 2020-01-05
 tags: [dashboard, web development]
 header:
     image: "/images/garmin-scraping/garmin-banner.jpg"
