@@ -19,9 +19,7 @@ The dashboard was developed using the packages [plotly\|Dash](https://plot.ly/da
 
 Lastly, the dashboard was deployed on [Heroku's](https://www.heroku.com/) platform.  This platform provides hosting services spanning from free accounts to enterprise accounts.  Using a command line interface, git repositories can be pushed to Heroku, where a custom environment is built and then the web service is launched.  All of the tools above enabled a public web dashboard to be deployed using nothing but Python and git.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png" alt="Finished Dashboard Screenshot">
-
-![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)
+[![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 *Finished Dashboard Screenshot*
 
 ## Discussion
