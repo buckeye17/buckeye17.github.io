@@ -13,15 +13,15 @@ Python 3.7 with: Dash, Plotly, Dash Bootstrap Components, Pandas, Matplotlib, Nu
 A conda environment for the web app was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/sleepwithdash) on Github, and the `README.md` file provides instructions for how to use the scripts and deploy the web app to Heroku or locally on a Windows machine.
 
 ## Overview
+A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
+
+[![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
+
 The goal of this project was to deploy a dashboard which visualizes all of my sleep data from my smartwatches.  This includes data from my Microsoft Health band (2015 - 2017) and Garmin smartwatch (2017 - present).  The dashboard was also expected to get new data from Garmin automatically.  Lastly, this dashboard was to be deployed on a public server so my work could be shared and also so I could view my data in the future without running Python on my PC.  This project benefitted from my previous web scraping [project](https://buckeye17.github.io/Scraping-Garmin/).
 
 The dashboard was developed using the packages [plotly\|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy [plotly](https://plot.ly/python/) interactive figures to a server as a flask app.  Dash Bootstrap Components extends Dash's html capabilities with the very popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also supports 20 [Bootswatch](https://bootswatch.com/) CSS themes.
 
 Lastly, the dashboard was deployed on the [Heroku platform](https://www.heroku.com/).  It provides hosting services spanning from free personal accounts to enterprise accounts.  Deployment is accomplished by a command line tool which enables Git repositories to be pushed to Heroku.  A custom environment is then built and the web service is launched.  All of the tools above enabled a public web-based dashboard to be deployed using nothing but Python and git.
-
-A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
-
-[![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
 ## Discussion
 This project entailed many challenges, including: 
