@@ -4,7 +4,7 @@ date: 2020-01-05
 tags: [dashboard, web development]
 header:
     image: "/images/garmin-scraping/garmin-banner.jpg"
-excerpt: "JSON sleep data files were obtained from May 2017 through the present.  These files provide the date and time for when I fell asleep and woke up each evening.  They also give the duration for how long I was in deep sleep, light sleep, awake (during a sleep event) and total sleep time."
+excerpt: "The goal of this project was to deploy a dashboard which visualizes all of my sleep data from my smartwatches."
 ---
 
 ## Environment
