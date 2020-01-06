@@ -8,7 +8,7 @@ excerpt: "JSON sleep data files were obtained from May 2017 through the present.
 ---
 
 ## Environment
-Python 3.8 with: Pandas, Numpy, Itertools, Datetime, JSON, RE, Pytz, Requests, Selenium, Seleniumwire, Brotli
+Python 3.7 with: Pandas, Numpy, Itertools, Datetime, JSON, RE, Pytz, Requests, Selenium, Seleniumwire, Brotli
 
 A conda environment for data science was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/garmin-scraping) on Github, and the README.md file provides instructions for how to use the scripts.
 
