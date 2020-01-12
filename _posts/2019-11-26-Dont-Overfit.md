@@ -8,7 +8,7 @@ excerpt: "The most surprising result in this analysis was that Logistic Regressi
 ---
 
 ## Environment
-Python 3.8 with: Sklearn, Matplotlib, Seaborn, Graphviz, Vecstack, Pandas, Numpy, Scipy, Random, os, itertools
+Python 3.7 with: Sklearn, Matplotlib, Seaborn, Graphviz, Vecstack, Pandas, Numpy, Scipy, Random, os, itertools
 
 A conda environment for data science was created, and all of the programming was implemented in a Jupyter notebook.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/dont-overfit-ii) on Github, and the README.md file provides instructions for reproducing my results.
 
