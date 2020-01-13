@@ -32,13 +32,13 @@ First, the data was explored with the aim of feature reduction.  Principal Compo
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Feature-PCA.png" alt="Feature PCA Plot">
 
-Kernel density plots were also overlaid for all 300 features.  The underlying feature data utilizes both training and test datasets.  In addition, the mean and standard deviation were derived from the entire feature population and the resulting normal distribution was plotted in black.  This shows that all features are approximately Gaussian.
+The feature correlations matrix is also plotted below.  Note, since PCA had indicated that all features were equally important, this correlation plot was expected to show all features to be independent.  Since no correlations were found between features, no features were eliminated in subsequent analysis.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Feature-Kernel-Densities.png" alt="Feature Kernel Densities Plot">
+<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Feature-Correlations.png" alt="Feature Correlations Matrix Plot"> 
 
-Lastly, feature correlations matrix was plotted as shown below.  Since no correlations were found between features, no features were eliminated in subsequent analysis.  Note, since PCA had indicated that all features were equally important, this correlation plot was expected to show all features as independent.
+Kernel density plots were also overlaid for all 300 features.  The underlying feature data utilizes both training and test datasets.  In addition, the mean and standard deviation were derived from the entire feature population and the resulting normal distribution was plotted in black.  This shows that all features are approximately Gaussian.  Taken alongside the PCA results, the strong similarity in feature distributions suggests the features are independent and identically distributed (iid).
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Feature-Correlations.png" alt="Feature Correlations Matrix Plot">
+<img src="{{ site.url }}{{ site.baseurl }}/images/dont-overfit/Feature-Kernel-Densities.png" alt="Feature Kernel Densities Plot"> 
 
 ### Modeling
 The following eight base models were created (bold font indicates the model was hypertuned): Logistic Regression, Support Vector Classification (SVC) with a linear kernel, SVC with a polynomial kernel, **SVC with a radial basis function kernel**, **K-Nearest Neighbors**, **Decision Tree**, **Stochastic Gradient Descent** and **Gaussian Naive Bayes**.  All models were cross validated with 5-folds and scored based on the 5-fold mean ROC AUC score.
