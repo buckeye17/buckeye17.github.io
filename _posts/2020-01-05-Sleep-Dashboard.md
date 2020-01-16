@@ -22,17 +22,21 @@ My goal for this project was to produce a public web app which provides visualiz
 
 [![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
-The data used for this dashboard begins with my Microsoft Health band (worn from 2015 to 2017).  I had previously downloaded all of this data through a third party website as CSV files.  The dashboard also uses all of my Garmin data (worn from 2017 to now).  I used my last [portfolio project](https://buckeye17.github.io/Scraping-Garmin/) to accomplish the tasks of scraping my Garmin data, wrangling it into a usable format and merging it with my Microsoft data.
+## Discussion
+### Data
+The data used for this app begins with my Microsoft Health band (worn from 2015 to 2017).  I had previously downloaded all of this data through a third party website as CSV files.  The app also uses all of my Garmin data (worn from 2017 to now).  I used my last [portfolio project](https://buckeye17.github.io/Scraping-Garmin/) to accomplish the tasks of scraping my Garmin data, wrangling it into a usable format and merging it with my Microsoft data.  This provides sleep data for more than 1,200 nights.
 
+### Dashboard Features
 The dashboard provides two views of the data via tabs underneath the blue navigation bar.  The first view is an overview, which shows the whole time-series since data was first collected in 2015.  The second tab view shows the data on an annual basis, allowing years to be compared against each other.  Along the y-axis the graphs show the time of day when I fell asleep, woke up time, the sun rose and set.  The graphs also show the duration of my sleep for each date.  The graphs also provide smoothed local regression (Lowess) trend line for these variables. These graphs can also be filtered for various types of days (e.g. days of week, work day, off day).
 
-The dashboard was developed using the packages [plotly\|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy [plotly](https://plot.ly/python/) interactive figures to a server as a flask app.  Dash Bootstrap Components extends Dash's html capabilities with the very popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also supports 20 [Bootswatch](https://bootswatch.com/) CSS themes.
+### Dashboard Development
+Ultimately, ~1,900 lines of Python were written (including comments and whitespace) to produce this dashboard.  It was developed using the packages [plotly\|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy [plotly](https://plot.ly/python/) interactive figures to a server as a flask app.  Dash Bootstrap Components extends Dash's html capabilities with the very popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also supports 20 [Bootswatch](https://bootswatch.com/) CSS themes to give different website styles.
 
+### Dashboard Deployment
 Lastly, the dashboard was deployed on the [Heroku platform](https://www.heroku.com/).  It provides hosting services spanning from free personal accounts to enterprise accounts.  Deployment is accomplished by a command line tool which enables Git repositories to be pushed to Heroku.  A custom environment is then built and the web service is launched.  All of the tools above enabled a public web-based dashboard to be deployed using nothing but Python and git.
 
-## Discussion
-Ultimately, ~1,900 lines of Python were written to produce this dashboard.  The project entailed many challenges, including: 
-1. Improving my web-scraping code so that data which had already been downloaded wouldn't be downloaded again.  Without this, each update would take more than 10 minutes to complete.
+## Challenges
+1. Improving my web-scraping code so that data which had already been downloaded wouldn't be downloaded again.  Without this, it would take more than 10 minutes to scrape all of the Garmin and sunset/sunrise data.
 2. Doing many date & time manipulations so that the proper date was referenced for each night and the time of day was properly represented based on timezone and daylight savings.  In conjunction with the datetime package, this effort demonstrated Panda's powerful date & time capabilities using the `.dt` accessor.
 3. Merging old Microsoft CSV data with Garmin in a consistent manner.  In addition to addressing the same date & time concerns with the Garmin data, this also required identifying and filtering out naps, since Microsoft captured these but Garmin did not.
 4. Downloading sunrise and sunset times for each date in the dataset based on Indianapolis' latitude and longitude from the API at [https://sunrise-sunset.org/api](https://sunrise-sunset.org/api).  This required forming the proper html request and wrangling the json response with more date & time manipulations.
@@ -44,6 +48,6 @@ Ultimately, ~1,900 lines of Python were written to produce this dashboard.  The 
 ## What Could Be Improved?
 Selenium runs with rare issues in my local conda environment, but it is finicky when running on Heroku.  It frequently fails, with various causes.  The only reason selenium is needed is to get a valid session header to append with the json data request.  Unfortunately, there doesn't seem to be a work around to this.
 
-The overview tab in the app is slow to update when changes are made to the filters.  The code for these updates would benefit from optimization.
+Heroku works by creating ephemeral copies of the deployed application for each user browsing session.  Since all of the data is stored within this environment, any updates to the data are lost once the user session ends.  To avoid loss of data, it should be stored in a separate cloud location that supports updating.
 
 The app supports filtering "off days", which are meant to represent nights where I didn't have work on the following morning.  This includes weekends, holidays and PTO.  Without access to my previous employer's records, I don't have an easy method for getting all of my PTO dates.  This could be improved with research in my email and Facebook accounts.  For now, many actual PTO days are assumed to be working days.
