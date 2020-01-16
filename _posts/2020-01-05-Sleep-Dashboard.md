@@ -1,10 +1,10 @@
 ---
-title: "Dashboard: Visualizing My Sleep Data"
+title: "Full Stack Dash Web App"
 date: 2020-01-05
 tags: [dashboard, web development]
 header:
     image: "/images/garmin-scraping/garmin-banner.jpg"
-excerpt: "The goal of this project was to deploy a dashboard which visualizes all of my sleep data from my smartwatches."
+excerpt: "The goal of this project was to deploy a dashboard which visualizes my sleep data from my smartwatches.  It also needed to automatically get new data from Garmin's website."
 ---
 
 ## Environment
@@ -12,12 +12,17 @@ Python 3.7 with: Dash, Plotly, Dash Bootstrap Components, Pandas, Matplotlib, Nu
 
 A conda environment for the web app was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/sleepwithdash) on Github, and the `README.md` file provides instructions for how to use the scripts and deploy the web app to Heroku or locally on a Windows machine.
 
-## Overview
-A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
+## Introduction
+For my entire adult life I have been a night owl, rarely falling asleep before 1AM.  One of the appeals to wearing a smartwatch had been quantifying my sleep patterns.  Some of my lurking questions were:
+1. How does my sleep vary within a year?
+2. How do daylight savings time changes and the sunset time effect my sleep?
+3. How does my sleep vary year-to-year?
+
+My goal for this project was to produce a public web app which provides visualizations to answer these questions.  Making it publicly available would make easy to share as part of my portfolio and it would give me experience deploying my work to a web server.  Lastly, I wanted the app to be able to automatically get new data from Garmin so I could continue using it.  A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
 
 [![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
-The goal of this project was to deploy a dashboard which visualizes all of my sleep data from my smartwatches.  This includes data from my Microsoft Health band (2015 - 2017) and Garmin smartwatch (2017 - present).  The dashboard was also expected to get new data from Garmin automatically.  Lastly, this dashboard was to be deployed on a public server so my work could be shared and also so I could view my data in the future without running Python on my PC.  This project benefitted from my previous web scraping [project](https://buckeye17.github.io/Scraping-Garmin/).
+The data used for this dashboard begins with my Microsoft Health band (worn from 2015 to 2017).  I had previously downloaded all of this data through a third party website as CSV files.  The dashboard also uses all of my Garmin data (worn from 2017 to now).  I used my last [portfolio project](https://buckeye17.github.io/Scraping-Garmin/) to accomplish the tasks of scraping my Garmin data, wrangling it into a usable format and merging it with my Microsoft data.
 
 The dashboard provides two views of the data via tabs underneath the blue navigation bar.  The first view is an overview, which shows the whole time-series since data was first collected in 2015.  The second tab view shows the data on an annual basis, allowing years to be compared against each other.  Along the y-axis the graphs show the time of day when I fell asleep, woke up time, the sun rose and set.  The graphs also show the duration of my sleep for each date.  The graphs also provide smoothed local regression (Lowess) trend line for these variables. These graphs can also be filtered for various types of days (e.g. days of week, work day, off day).
 
