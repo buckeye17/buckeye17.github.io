@@ -18,7 +18,7 @@ For my whole adult life I have been a night owl, rarely falling asleep before 1A
 2. How do daylight savings time changes and the time of sunset effect my sleep?
 3. How does my sleep vary year-to-year?
 
-My goal for this project was to produce a public web app which provides visualizations to answer these questions.  Making it publicly available would make easy to share as part of my portfolio and it would give me experience deploying my work to a web server.  Lastly, I wanted the app to be able to automatically get new data from Garmin so I could continue monitoring my sleep without constant deployment updates.  A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
+My goal for this project was to produce a public web app which provides visualizations to answer these questions.  Making it publicly available would make easy to share as part of my portfolio and it would give me experience deploying my work to a web server.  Lastly, I wanted the app to be able to automatically get new data from Garmin so I could continue monitoring my sleep without constant deployment updates.  This project represents a full stack solution because it encompasses everything from web scraping to app deployment.  A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
 
 [![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
