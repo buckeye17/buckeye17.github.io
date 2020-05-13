@@ -47,13 +47,15 @@ The above data wrangling is accomplished entirely in a Jupyter notebook [<-- INS
 
 The data wrangling tasks were to find population data sources (i.e. the US Census Bureau or Wikipedia) and Geo JSON files.  With each of the data sources (11 in total), effort was required to adjust either these data sources or Johns Hopkins data so that each of the regions could be matched across the datasets.  Population data wrangling was in this notebook [<-- INSERT LINK HERE].  Note that the population dataframes produced by this notebook are inputs into the Johns Hopkins notebook described above.  Most Geo JSON data wrangling was done on the Johns Hopkins region names as opposed to modifying the JSON files, except for the Chinese provinces files.  In this case, the province names were in Chinese characters, so the JSON file was modified.
 
+### Modeling
+
 ### Dashboard Development
 Ultimately, ~3,400 lines of Python were written (including comments and whitespace) in the full pipeline to produce this dashboard.  It was developed using the packages [plotly\|Dash](https://plot.ly/dash/) and [Dash Bootstrap Components](https://dash-bootstrap-components.opensource.faculty.ai/).  Dash enables developers to deploy [plotly](https://plot.ly/python/) interactive figures to a server as a Flask app.  Dash Bootstrap Components extends Dash's html capabilities with the popular html [Bootstrap](https://getbootstrap.com/) framework, which is designed to, "build responsive, mobile-first projects on the web."  Dash Bootstrap Components also supports 20 [Bootswatch](https://bootswatch.com/) CSS themes to produce different website styles.
 
 ### Dashboard Deployment
 Lastly, the dashboard was deployed on the [Heroku platform](https://www.heroku.com/), which provides hosting services spanning from free personal accounts to enterprise accounts.  Deployment is accomplished by a command line tool which enables Git repositories to be pushed to Heroku.  A custom environment is then built and the web service is launched.  All of the tools above enabled a public web-based dashboard to be deployed using nothing but Python and git.
 
-Based on my experience deploying a Heroku app previously, I knew that the app's memory would be ephemeral, meaning that once it is deployed, the data cannot be updated in any permanent manner.  I had hoped to avoid this by storing my daily-updated Panddas pickle files on my Google Drive, but this was unsuccessful because I could not complete the authentication with Google in the Heroku headless environment.  For, I will re-deploy my app daily to keep the data up to date.
+Based on my experience deploying a Heroku app previously, I knew that the app's memory would be ephemeral, meaning that once it is deployed, the data cannot be updated in any permanent manner.  I had hoped to avoid this by storing my daily-updated Pandas pickle files on my Google Drive, but this was unsuccessful because I could not complete the authentication with Google in the Heroku headless environment.  For, I will re-deploy my app daily to keep the data up to date.
 
 ## Challenges
 The following list is meant to highlight the various challenges I encountered in this project as well as to share some of my solutions.
