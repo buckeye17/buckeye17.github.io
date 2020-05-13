@@ -20,10 +20,15 @@ Having often used Johns Hopkins' [COVID dashboard](https://github.com/CSSEGISand
 
 The goal of my dashboard was to provide a very flexible interface so that users can alter the plotted values as they desire.  In addition, I investigated whether simple projections could be made from the months of data.  But after completing a few models, I felt it would be irresponsible to make novice projections.  Instead, I decided to make sandboxes where a basic epidemiology model could be explored. A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
 
-[![]({{ site.url }}{{ site.baseurl }}/images/covid-dashboard/Dashboard_Screenshot.png)](https://sleepwithdash.herokuapp.com/)
+[![]({{ site.url }}{{ site.baseurl }}/images/covid-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
 ## Discussion
 ### Data
+There are three kinds of data used in this app:
+1. Johns Hopkins' COVID-19 data
+2. Population data to enable per capita calculations
+3. Geo JSON data to define the boundaries of geographical regions used in the heat maps
+
 The data used for this app begins with my Microsoft Health band (worn from 2015 to 2017).  I had previously downloaded all of this data through a third party website as CSV files.  The app also uses all of my Garmin data (worn from 2017 to now).  I used my last [portfolio project](https://buckeye17.github.io/Scraping-Garmin/) to accomplish the tasks of scraping my Garmin data, wrangling it into a usable format and merging it with my Microsoft data.  This provides sleep data for more than 1,200 nights.
 
 ### Dashboard Features
