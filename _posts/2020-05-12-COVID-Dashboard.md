@@ -58,6 +58,7 @@ Lastly, the dashboard was deployed on the [Heroku platform](https://www.heroku.c
 Based on my experience deploying a Heroku app previously, I knew that the app's memory would be ephemeral, meaning that once it is deployed, the data cannot be updated in any permanent manner.  I had hoped to avoid this by storing my daily-updated Pandas pickle files on my Google Drive, but this was unsuccessful because I could not complete the authentication with Google in the Heroku headless environment.  For, I will re-deploy my app daily to keep the data up to date.
 
 ## Challenges
+Animation due to varying label length
 The following list is meant to highlight the various challenges I encountered in this project as well as to share some of my solutions.
 1. Improving my web-scraping code so that data which had already been downloaded wouldn't be downloaded again.  Without this, each update would take more than 10 minutes to scrape all of the Garmin and sunset/sunrise data.
 2. Extensive date & time manipulations were needed so that the proper date was referenced for each night of sleep and the time of day was properly represented based on timezone and daylight savings.  In conjunction with the datetime package, this effort demonstrated Panda's powerful date & time capabilities using the `.dt` accessor.
