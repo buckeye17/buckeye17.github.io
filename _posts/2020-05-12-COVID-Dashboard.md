@@ -3,7 +3,7 @@ title: "Full Stack Development: COVID Web App"
 date: 2020-05-12
 tags: [dashboard, web development]
 header:
-    image: "/images/covid-dashboard/Heatmap_Banner_3x1.png"
+    image: "/images/covid-dashboard/Heatmap_Banner_3x1.jpg"
 excerpt: "The goal of this project was to deploy a dashboard which visualizes Johns Hopkins data for worldwide COVID-19 infections, providing a lot of a customization for how the user wants to view the data."
 ---
 
