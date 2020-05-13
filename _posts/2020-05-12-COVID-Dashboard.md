@@ -13,16 +13,14 @@ Python 3.6 with: Dash, Plotly, Dash Bootstrap Components, Pandas, Matplotlib, Nu
 A conda environment for the web app was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/sleepwithdash) on Github, and the `README.md` file provides instructions for how to use the scripts and deploy the web app to Heroku or locally on a Windows machine.
 
 ## Introduction
-For my whole adult life I have been a night owl, rarely falling asleep before 1AM.  One of the appeals to wearing a smartwatch has been the potential to quantify my unusual sleep patterns.  But smartwatch manufacturers provide limited tools to visualize the data.  A few of my lurking questions were:
-1. How does my sleep vary within a year?
-2. How do daylight savings time changes and the time of sunset effect my sleep?
-3. How does my sleep vary year-to-year?
+Having often used Johns Hopkins' [COVID dashboard](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports), I was impressed that it gave access to COVID-19 data worldwide with a simple interface.  But it left me wanting in a few respects:
+1. COVID-related history curves for various regions and for various case counts (like confirmed or deaths) could not be plotted together.
+2. The bubble map makes it difficult to see and compare plotted values.  A heat map would be better suited for this purpose.
+3. Per Capita values aren't available.
 
-My goal for this project was to produce a public web app which provides visualizations to answer these questions.  Making it publicly available would make easy to share as part of my portfolio and it would give me experience deploying my work to a web server.  Lastly, I wanted the app to be able to automatically get new data from Garmin so I could continue monitoring my sleep without constant deployment updates.  This project represents a full stack solution because it encompasses everything from web scraping to app deployment.  A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
+The goal of my dashboard was to provide a very flexible interface so that users can alter the plotted values as they desire.  In addition, I investigated whether simple projections could be made from the months of data.  But after completing a few models, I felt it would be irresponsible to make novice projections.  Instead, I decided to make sandboxes where a basic epidemiology model could be explored. A screenshot of the finished [dashboard](https://sleepwithdash.herokuapp.com/) is provided below.
 
-[![]({{ site.url }}{{ site.baseurl }}/images/sleep-dashboard/screenshot.png)](https://sleepwithdash.herokuapp.com/)
-
-Comparing years against one another, there doesn't seem to be a repeating pattern, except around Christmas, because I'm always off work for at least 7 days.  Daylight savings time changes appear to have negligible effects.  Lastly, there is a surprising amount of variation year-to-year.
+[![]({{ site.url }}{{ site.baseurl }}/images/covid-dashboard/Dashboard_Screenshot.png)](https://sleepwithdash.herokuapp.com/)
 
 ## Discussion
 ### Data
