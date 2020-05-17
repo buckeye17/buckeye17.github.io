@@ -3,7 +3,7 @@ title: "Tensorflow 2: NLP for Netflix Data"
 date: 2020-03-25
 tags: [deep learning, nlp]
 header:
-    image: "/images/tensorflow/Tensorflow_Banner.jpg"
+    image: "/images/tensorflow/Tensorflow_Banner_3x1.jpg"
 excerpt: "The goal of this project was to get my hands dirty using Tensorflow 2 in an NLP project."
 ---
 
