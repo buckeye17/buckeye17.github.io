@@ -13,6 +13,10 @@ Python 3.6 with: Dash, Plotly, Dash Bootstrap Components, Pandas, Matplotlib, Nu
 A conda environment for the web app was created, and all of the programming was implemented in python scripts.  All of the associated files have been placed in my [project repository](https://github.com/buckeye17/seecovid) on Github, and the `README.md` file provides instructions for how to use the scripts and deploy the web app to Heroku or locally on a Windows machine.
 
 ## Introduction
+Update (August 7, 2020): A new version of the app has been deployed on AWS.  Discussion the new deployment can be found here: [https://buckeye17.github.io/Docker-and-AWS/](https://buckeye17.github.io/Docker-and-AWS/)
+
+The new app can be found here: [http://seecovid.eba-ishvxpm4.us-east-1.elasticbeanstalk.com/](http://seecovid.eba-ishvxpm4.us-east-1.elasticbeanstalk.com/)
+
 Having often used Johns Hopkins' [COVID dashboard](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports), I was impressed that it gave access to COVID-19 data worldwide with a simple interface.  But it left me wanting in a few respects:
 1. COVID-related history curves for various regions and for various case counts (like confirmed or deaths) could not be plotted together.
 2. The bubble map makes it difficult to see and compare plotted values.  A heat map would be better suited for this purpose.
