@@ -1,6 +1,6 @@
 ---
 title: "Docker-izing a Dash App & Deploying to AWS"
-date: 2020-05-14
+date: 2020-08-07
 tags: [docker, AWS, web development]
 header:
     image: "/images/docker-and-aws/Docker_AWS_Banner.png"
@@ -9,9 +9,9 @@ excerpt: "The goal of this project was to docker-ize the COVID-19 web app made w
 # Summary
 Changes were made to docker-ize the original Dash web app and to deploy it to AWS Elastic Beanstalk.  This deployment reduced my operating cost from $250/month to $10/month, without any noticeable sacrifice in performance.  Lastly, this deployment fully automated the task of pushing new data to the web app.
 
-The new app location can be found here: http://seecovid.eba-ishvxpm4.us-east-1.elasticbeanstalk.com/
+The new app location can be found here: [http://seecovid.eba-ishvxpm4.us-east-1.elasticbeanstalk.com/](http://seecovid.eba-ishvxpm4.us-east-1.elasticbeanstalk.com/)
 
-The latest code is still available on Github: https://github.com/buckeye17/seecovid
+The latest code is still available on Github: [https://github.com/buckeye17/seecovid](https://github.com/buckeye17/seecovid)
 
 # Introduction
 The idea for this project arose after a Data Science interview I had in which the hiring manager mentioned that they like to use Docker containers to provide reproducibility in their projects.  I had heard about Docker but never used it.  So this project was meant to get my hands dirty with Docker.
